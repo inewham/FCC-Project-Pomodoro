@@ -1,0 +1,22 @@
+#logo {
+  height: 3rem;
+}
+
+.jumbotron {
+  color: white;
+  background-color: #006400;
+  border-radius: 0rem;
+}
+
+#fcc {
+  height: 20rem;
+  width: auto;
+  color: #006400;
+  border: 1px solid #006400;
+  padding: 1rem;
+}
+
+#pomFooter {
+  background-color: #006400;
+  margin-top: 2rem;
+}
