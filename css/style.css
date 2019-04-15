@@ -12,8 +12,42 @@
   height: 20rem;
   width: auto;
   color: #006400;
-  border: 1px solid #006400;
+  /* border: 1px solid #006400; */
   padding: 1rem;
+}
+
+#start_stop,
+#reset,
+#break-increment,
+#break-decrement,
+#session-increment,
+#session-decrement {
+  background-color: #006400;
+  border-color: #006400;
+}
+
+#start_stop,
+#reset {
+  display: flex;
+  width: 20%;
+  margin: auto;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+#break-btn {
+  display: flex;
+  width: 22%;
+  margin: auto;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+#break-increment,
+#break-decrement,
+#session-increment,
+#session-decrement {
+  width: 2.5rem;
 }
 
 #pomFooter {
