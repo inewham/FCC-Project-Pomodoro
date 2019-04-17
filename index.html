@@ -14,42 +14,58 @@
     </title>
   </head>
   <body>
-    
-
     <header>
       <div class="jumbotron">
         <h1>
-          <span class="fab fa-free-code-camp" ></span>
+          <span class="fab fa-free-code-camp"></span>
           <strong><em>FCC: Front-end Libraries Project</em></strong>
         </h1>
-        <h2><strong><em>Build a Pomodoro Clock</em></strong></h2>
+        <h2>
+          <strong><em>Build a Pomodoro Clock</em></strong>
+        </h2>
       </div>
     </header>
-    <div class="container-fluid">
-              <!--Main Body -->
-        <div class="col-md-12"></div>
-      </div>
-    </div>
 
     <main>
       <div class="container">
         <div>
-            <span id="fcc" class="fab fa-free-code-camp rounded mx-auto d-block"></span>
+          <span
+            id="fcc"
+            class="fab fa-free-code-camp rounded mx-auto d-block"
+          ></span>
         </div>
+      </div>
+
+      <div class="container">
         <div class="row">
           <div class="col">
-            <botton id="start_stop" class="btn btn-primary">Start</botton>
-            <botton id="reset" class="btn btn-primary">Reset</botton>
+            <div class="row" style="display:grid; justify-content:right;">
+              <button class="btn btn-primary">
+                Start
+              </button>
+            </div>
+            <div id="session-btn" class="row">
+              <label
+                >Session:
+                <input
+                  id="session-length"
+                  type="number"
+                  name="session"
+                  value="25"
+                />
+              </label>
+            </div>
           </div>
-        </div>
-        <div id="break-btn" class="row">
           <div class="col">
-              <botton id="break-increment" class="btn btn-primary">+</botton>
-              <botton id="break-decrement" class="btn btn-primary">-</botton>
-          </div>
-          <div class="col">
-              <botton id="session-increment" class="btn btn-primary">+</botton>
-              <botton id="session-decrement" class="btn btn-primary">-</botton>
+            <div class="row">
+              <button class="btn btn-primary">Stop</button>
+            </div>
+            <div class="row">
+              <label
+                >Break:
+                <input id="break-length" type="number" name="break" value="5" />
+              </label>
+            </div>
           </div>
         </div>
       </div>
@@ -57,7 +73,7 @@
 
     <footer>
       <div id="pomFooter" class="container-fluid">
-        <img class="rounded mx-auto d-block" src="images/fcc.png">
+        <img class="rounded mx-auto d-block" src="images/fcc.png" />
       </div>
     </footer>
 

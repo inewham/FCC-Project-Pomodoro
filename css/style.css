@@ -12,7 +12,6 @@
   height: 20rem;
   width: auto;
   color: #006400;
-  /* border: 1px solid #006400; */
   padding: 1rem;
 }
 
@@ -26,21 +25,25 @@
   border-color: #006400;
 }
 
-#start_stop,
-#reset {
-  display: flex;
-  width: 20%;
+.start_stop_btn {
+  display: grid;
+  place-items: center;
+  width: 100%;
   margin: auto;
-  justify-content: center;
+}
+
+#start_stop,
+#reset,
+#session-length,
+#break-length {
+  width: 6rem;
+  margin: auto;
   margin-top: 0.5rem;
 }
 
-#break-btn {
-  display: flex;
-  width: 22%;
-  margin: auto;
-  justify-content: center;
-  margin-top: 0.5rem;
+#session-btn {
+  display: grid;
+  justify-content: right;
 }
 
 #break-increment,
