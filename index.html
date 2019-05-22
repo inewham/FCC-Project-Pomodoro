@@ -27,6 +27,7 @@
     </header>
 
     <main>
+      <!-- Large FCC logo -->
       <div class="container">
         <div>
           <span
@@ -36,16 +37,16 @@
         </div>
       </div>
 
-      <div class="container">
+      <!-- <div class="container">
         <div class="row">
           <div class="col">
-            <div class="row" style="display:grid; justify-content:right;">
+            <div id="btn-r-just" class="row">
               <button class="btn btn-primary">
                 Start
               </button>
             </div>
             <div id="session-btn" class="row">
-              <label
+              <label id="session-label"
                 >Session:
                 <input
                   id="session-length"
@@ -57,14 +58,58 @@
             </div>
           </div>
           <div class="col">
-            <div class="row">
-              <button class="btn btn-primary">Stop</button>
+            <div id="btn-l-just" class="row">
+              <button class="btn btn-primary">
+                Stop
+              </button>
             </div>
             <div class="row">
-              <label
+              <label id="break-label"
                 >Break:
                 <input id="break-length" type="number" name="break" value="5" />
               </label>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div id="ctlPanelContainer" class="container">
+        <!-- ROW 1-->
+        <div class="row">
+          <!-- ROW 1 COLUMN 1-->
+          <div class="col ctlPanel">
+            <!-- ROW 1 COLUMN 1 ROW 1-->
+            <div class="row ctlPanel">
+              <button class="btn btn-primary">
+                Start
+              </button>
+            </div>
+            <!-- ROW 1 COLUMN 1 ROW 2-->
+            <div class="row ctlPanel">
+              <label id="session-label">Session:</label>
+            </div>
+            <!-- ROW 1 COLUMN 1 ROW 3-->
+            <div class="row ctlPanel">
+              <label id="break-label">Break: </label>
+            </div>
+          </div>
+          <!-- ROW 1 COLUMN 2-->
+          <div class="col">
+            <!-- ROW 1 COLUMN 2 ROW 1-->
+            <div class="row ctlPanel">
+              <button class="btn btn-primary">
+                Stop
+              </button>
+            </div>
+            <div class="row ctlPanel">
+              <input
+                id="session-length"
+                type="number"
+                name="session"
+                value="25"
+              />
+            </div>
+            <div class="row ctlPanel">
+              <input id="break-length" type="number" name="session" value="5" />
             </div>
           </div>
         </div>
