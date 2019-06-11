@@ -8,15 +8,29 @@
   border-radius: 0rem;
 }
 
-#fcc {
-  height: 20rem;
-  width: auto;
+#timer-container {
+  justify-content: center;
+}
+
+#timer-label {
+  justify-content: center;
+}
+
+#time-left {
+  height: 5rem;
+  width: 30%;
+  font-size: 3em;
   color: #006400;
   padding: 1rem;
+  text-align: center;
 }
 
 #ctlPanelContainer {
   width: 14em;
+}
+
+#start_stop_cont {
+  width: 100%;
 }
 
 .ctlPanel {
@@ -38,12 +52,12 @@
   border-color: #006400;
 }
 
-.start_stop_btn {
+/* .start_stop_btn {
   display: grid;
   place-items: center;
   width: 100%;
   margin: auto;
-}
+} */
 
 #start_stop,
 #reset,
