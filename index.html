@@ -14,6 +14,10 @@
     </title>
   </head>
   <body>
+    <!--
+        Page title banner
+    -->
+
     <header>
       <div class="jumbotron">
         <h1>
@@ -27,7 +31,11 @@
     </header>
 
     <main>
-      <!-- Large FCC logo -->
+      <!--
+             Main Control Panel
+               Clock face
+      -->
+
       <div id="timer-container" class="container">
         <div id="timer-label" class="row">
           <input
@@ -40,22 +48,28 @@
         </div>
       </div>
 
+      <!--  
+            Main Control Panel
+            Start/Stop buttons
+            Session/break counters
+      -->
+
       <div id="ctlPanelContainer" class="container">
         <!-- Row 1-->
         <form>
-          <div class="row ctlPanel main-buttons">
-            <div class="col-6">
+          <div class="row">
+            <div class="col-6 ctlPanel">
               <button id="start_stop" class="btn btn-primary">
                 Start/Stop
               </button>
             </div>
-            <div class="col-6">
+            <div class="col-6 ctlPanel">
               <input type="reset" id="reset" class="btn btn-primary" />
             </div>
           </div>
           <!-- Row 2-->
           <div class="row">
-            <div class="col ctlPanel">
+            <div class="col-6 ctlPanel">
               <label id="session-label"
                 >Session:
                 <input
@@ -68,14 +82,14 @@
                 />
               </label>
             </div>
-            <div class="col ctlPanel">
+            <div class="col-6 ctlPanel">
               <button id="session-increment" class="btn btn-primary">+</button>
               <button id="session-decrement" class="btn btn-primary">-</button>
             </div>
           </div>
           <!-- Row 3 -->
           <div class="row">
-            <div class="col ctlPanel">
+            <div class="col-6 ctlPanel">
               <label id="break-label"
                 >Break:
                 <input
@@ -88,13 +102,16 @@
                 />
               </label>
             </div>
-            <div class="col ctlPanel">
+            <div class="col-6 ctlPanel">
               <button id="break-increment" class="btn btn-primary">+</button>
               <button id="break-decrement" class="btn btn-primary">-</button>
             </div>
           </div>
         </form>
       </div>
+      <!--
+          End of Main Control Panel
+      -->
     </main>
 
     <footer>

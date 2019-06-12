@@ -1,6 +1,10 @@
-#logo {
-  height: 3rem;
-}
+/*
+#########################
+#                       #
+#   Page title banner   #
+#                       #
+#########################
+*/
 
 .jumbotron {
   color: white;
@@ -8,8 +12,17 @@
   border-radius: 0rem;
 }
 
+/*
+#########################
+#                       #
+#      Clock face       #
+#                       #
+#########################
+*/
+
 #timer-container {
   justify-content: center;
+  margin-bottom: 0.5rem;
 }
 
 #timer-label {
@@ -25,16 +38,29 @@
   text-align: center;
 }
 
+/*
+#########################
+#                       #
+#   Main Control Panel  #
+#                       #
+#########################
+*/
+
 #ctlPanelContainer {
-  width: 22rem;
+  width: 20rem;
+  border: 1px solid #006400;
 }
 
-#start_stop_cont {
-  width: 100%;
+.ctlPanel {
+  text-align: center;
 }
 
-.main-buttons {
-  padding-left: 1.5rem;
+#start_stop,
+#reset {
+  width: 6rem;
+  margin: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 #session-increment,
@@ -42,11 +68,6 @@
 #break-increment,
 #break-decrement {
   margin-top: 0.5rem;
-}
-
-.ctlPanel {
-  justify-content: center;
-  /* border: 1px solid black; */
 }
 
 #session-label,
@@ -64,39 +85,11 @@
   border-color: #006400;
 }
 
-#start_stop,
-#reset {
-  width: 6rem;
-  margin: auto;
-  margin-top: 0.5rem;
-}
-
-#break-length {
-  margin-left: 2rem;
-}
-
 #session-length,
 #break-length {
-  width: 4rem;
+  width: 3.5rem;
   margin: auto;
   margin-top: 0.5rem;
-}
-
-#btn-r-just {
-  display: grid;
-  justify-content: right;
-  padding-right: 0.5rem;
-}
-
-#btn-l-just {
-  display: grid;
-  justify-content: left;
-  margin-left: 0.5rem;
-}
-
-#session-btn {
-  display: grid;
-  justify-content: right;
 }
 
 #break-increment,
@@ -110,6 +103,14 @@
   background-color: #006400;
   margin-top: 2rem;
 }
+
+/*
+#########################
+#                       #
+#   CSS Media Query     #
+#                       #
+#########################
+*/
 
 @media screen and (max-width: 830px) {
   .jumbotron {
