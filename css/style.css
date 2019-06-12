@@ -18,7 +18,7 @@
 
 #time-left {
   height: 5rem;
-  width: 30%;
+  width: 12rem;
   font-size: 3em;
   color: #006400;
   padding: 1rem;
@@ -26,15 +26,27 @@
 }
 
 #ctlPanelContainer {
-  width: 14em;
+  width: 22rem;
 }
 
 #start_stop_cont {
   width: 100%;
 }
 
+.main-buttons {
+  padding-left: 1.5rem;
+}
+
+#session-increment,
+#session-decrement,
+#break-increment,
+#break-decrement {
+  margin-top: 0.5rem;
+}
+
 .ctlPanel {
   justify-content: center;
+  /* border: 1px solid black; */
 }
 
 #session-label,
@@ -52,18 +64,20 @@
   border-color: #006400;
 }
 
-/* .start_stop_btn {
-  display: grid;
-  place-items: center;
-  width: 100%;
-  margin: auto;
-} */
-
 #start_stop,
-#reset,
+#reset {
+  width: 6rem;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+#break-length {
+  margin-left: 2rem;
+}
+
 #session-length,
 #break-length {
-  width: 6rem;
+  width: 4rem;
   margin: auto;
   margin-top: 0.5rem;
 }
@@ -95,4 +109,25 @@
 #pomFooter {
   background-color: #006400;
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 830px) {
+  .jumbotron {
+    height: 5rem;
+    color: white;
+    background-color: #006400;
+    border-radius: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .jumbotron h1,
+  .jumbotron h2 {
+    font-size: 1rem;
+  }
+
+  #time-left {
+    font-size: 1.5rem;
+    width: 7.5rem;
+  }
 }

@@ -43,7 +43,7 @@
       <div id="ctlPanelContainer" class="container">
         <!-- Row 1-->
         <form>
-          <div class="row ctlPanel">
+          <div class="row ctlPanel main-buttons">
             <div class="col-6">
               <button id="start_stop" class="btn btn-primary">
                 Start/Stop
@@ -56,33 +56,41 @@
           <!-- Row 2-->
           <div class="row">
             <div class="col ctlPanel">
-              <label id="session-label">Session:</label>
+              <label id="session-label"
+                >Session:
+                <input
+                  id="session-length"
+                  type="number"
+                  name="session"
+                  value="25"
+                  min="1"
+                  max="60"
+                />
+              </label>
             </div>
             <div class="col ctlPanel">
-              <input
-                id="session-length"
-                type="number"
-                name="session"
-                value="25"
-                min="1"
-                max="60"
-              />
+              <button id="session-increment" class="btn btn-primary">+</button>
+              <button id="session-decrement" class="btn btn-primary">-</button>
             </div>
           </div>
           <!-- Row 3 -->
-          <div class="row ctlPanel">
+          <div class="row">
             <div class="col ctlPanel">
-              <label id="break-label">Break: </label>
+              <label id="break-label"
+                >Break:
+                <input
+                  id="break-length"
+                  type="number"
+                  name="session"
+                  value="5"
+                  min="1"
+                  max="60"
+                />
+              </label>
             </div>
             <div class="col ctlPanel">
-              <input
-                id="break-length"
-                type="number"
-                name="session"
-                value="5"
-                min="1"
-                max="60"
-              />
+              <button id="break-increment" class="btn btn-primary">+</button>
+              <button id="break-decrement" class="btn btn-primary">-</button>
             </div>
           </div>
         </form>
