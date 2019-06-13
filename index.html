@@ -36,13 +36,14 @@
                Clock face
       -->
 
-      <div id="timer-container" class="container">
+      <div id="pomodoro" class="container">
         <div id="timer-label" class="row">
           <input
+            class="values"
             id="time-left"
             type="text"
             name="time-left"
-            value="25:00"
+            value="00:00:00"
             readonly
           />
         </div>
@@ -56,58 +57,60 @@
 
       <div id="ctlPanelContainer" class="container">
         <!-- Row 1-->
-        <form>
-          <div class="row">
-            <div class="col-6 ctlPanel">
-              <button id="start_stop" class="btn btn-primary">
-                Start/Stop
-              </button>
-            </div>
-            <div class="col-6 ctlPanel">
-              <input type="reset" id="reset" class="btn btn-primary" />
-            </div>
+        <div class="row">
+          <div id="start_stopBtn" class="col-6 ctlPanel">
+            <button id="start_stop" class="btn btn-primary startButton">
+              Start/Stop
+            </button>
           </div>
-          <!-- Row 2-->
-          <div class="row">
-            <div class="col-6 ctlPanel">
-              <label id="session-label"
-                >Session:
-                <input
-                  id="session-length"
-                  type="number"
-                  name="session"
-                  value="25"
-                  min="1"
-                  max="60"
-                />
-              </label>
-            </div>
-            <div class="col-6 ctlPanel">
-              <button id="session-increment" class="btn btn-primary">+</button>
-              <button id="session-decrement" class="btn btn-primary">-</button>
-            </div>
+          <div id="resetBtn" class="col-6 ctlPanel">
+            <input
+              type="reset"
+              id="reset"
+              class="btn btn-primary resetButton"
+            />
           </div>
-          <!-- Row 3 -->
-          <div class="row">
-            <div class="col-6 ctlPanel">
-              <label id="break-label"
-                >Break:
-                <input
-                  id="break-length"
-                  type="number"
-                  name="session"
-                  value="5"
-                  min="1"
-                  max="60"
-                />
-              </label>
-            </div>
-            <div class="col-6 ctlPanel">
-              <button id="break-increment" class="btn btn-primary">+</button>
-              <button id="break-decrement" class="btn btn-primary">-</button>
-            </div>
+        </div>
+        <!-- Row 2-->
+        <div class="row">
+          <div id="sessLblCtlPanel" class="col-6 ctlPanel">
+            <label id="session-label"
+              >Session:
+              <input
+                id="session-length"
+                type="number"
+                name="session"
+                value="25"
+                min="1"
+                max="60"
+              />
+            </label>
           </div>
-        </form>
+          <div id="sessBtnCtlPanel" class="col-6 ctlPanel">
+            <button id="session-increment" class="btn btn-primary">+</button>
+            <button id="session-decrement" class="btn btn-primary">-</button>
+          </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="row">
+          <div id="brLblCtlPanel" class="col-6 ctlPanel">
+            <label id="break-label"
+              >Break:
+              <input
+                id="break-length"
+                type="number"
+                name="session"
+                value="5"
+                min="1"
+                max="60"
+              />
+            </label>
+          </div>
+          <div id="brBtnCtlPanel" class="col-6 ctlPanel">
+            <button id="break-increment" class="btn btn-primary">+</button>
+            <button id="break-decrement" class="btn btn-primary">-</button>
+          </div>
+        </div>
       </div>
       <!--
           End of Main Control Panel
@@ -126,5 +129,6 @@
     <script src="js/all.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://raw.githubusercontent.com/mckamey/countdownjs/master/countdown.js"></script>
   </body>
 </html>
